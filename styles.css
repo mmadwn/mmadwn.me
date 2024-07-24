@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* DEFAULT */
+:root {
+  --fit-color: rgb(0, 0, 0);
+  --second-color: rgba(51, 51, 51, 0.5);
+  --text-color: white;
+  --welcome-background: linear-gradient(
+    to Bottom,
+    rgb(0, 0, 0) 0%,
+    rgb(20, 20, 20) 100%
+  );
+  --about-background: linear-gradient(
+    to Bottom,
+    rgb(20, 20, 20) 0%,
+    rgb(33, 33, 33) 100%
+  );
+  --skills-background: linear-gradient(
+    rgb(33, 33, 33) 0%,
+    rgb(44, 44, 44) 100%
+  );
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: var(--text-color);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.btn {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+/*----------------------HEADER----------------- */
+.header,
+.nav-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-desktop {
+  background: var(--fit-color);
+  height: 6vh;
+  border: 1px solid var(--second-color);
+}
+
+#navbar {
+  max-width: 350px;
+  width: 100%;
+}
+
+.navbar-list {
+  gap: 0.5rem;
+}
+
+/*----------------------MAIN----------------- */
+
+/* WELCOME SECTION */
+#welcome-section,
+#about-section,
+#skills-section,
+.welcome-info,
+.about,
+.about-info,
+.box-info,
+.btn-container,
+.social-container,
+.experience-container,
+.education-container
+ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section {
+  gap: 5rem;
+  height: 96vh;
+  background: var(--welcome-background);
+  /* margin: 0 10rem; */
+}
+
+.welcome-picture {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.welcome-info {
+  flex-direction: column;
+  column-gap: 5rem;
+}
+
+.btn-container,
+.social-container {
+  gap: 1rem;
+}
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* ABOUT SECTION */
+#about-section {
+  flex-direction: column;
+  background: var(--about-background);
+  /* margin: 0 10rem; */
+}
+
+.head-section {
+  height: 4vh;
+  text-align: center;
+}
+
+.about {
+  gap: 2rem;
+  height: 80vh;
+}
+
+.about-picture {
+  border-radius: 1rem;
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.about-info {
+  flex-direction: column;
+}
+
+.box-info {
+  gap: 2rem;
+}
+
+.experience-container,
+.education-container {
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid var(--text-color);
+  border-radius: 1rem;
+}
+
+/* SKILLS SECTION */
+#skills-section {
+  background: var(--skills-background)
+}
