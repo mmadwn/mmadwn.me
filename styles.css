@@ -19,6 +19,11 @@
     rgb(33, 33, 33) 0%,
     rgb(44, 44, 44) 100%
   );
+  --projects-background: linear-gradient(
+    to Bottom,
+    rgb(44, 44, 44) 0%,
+    rgb(20, 20, 20) 100%
+  );
 }
 
 /* CSS Reset */
@@ -73,7 +78,12 @@ img {
   height: 6vh;
   border: 1px solid var(--second-color);
 }
-
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 #navbar {
   max-width: 350px;
   width: 100%;
@@ -89,15 +99,20 @@ img {
 #welcome-section,
 #about-section,
 #skills-section,
+#projects,
+#contact-section,
 .welcome-info,
-.about,
 .about-info,
 .box-info,
+.about-info,
+.skills-info,
+.development,
+.skills-rows,
+.skill-name,
 .btn-container,
 .social-container,
 .experience-container,
-.education-container
- {
+.education-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +120,7 @@ img {
 
 #welcome-section {
   gap: 5rem;
-  height: 96vh;
+  height: 100vh;
   background: var(--welcome-background);
   /* margin: 0 10rem; */
 }
@@ -136,17 +151,17 @@ img {
 #about-section {
   flex-direction: column;
   background: var(--about-background);
+  height: 100vh;
   /* margin: 0 10rem; */
 }
 
 .head-section {
-  height: 4vh;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
-.about {
+.about-info {
   gap: 2rem;
-  height: 80vh;
 }
 
 .about-picture {
@@ -156,7 +171,7 @@ img {
   overflow: hidden;
 }
 
-.about-info {
+.about-details {
   flex-direction: column;
 }
 
@@ -174,5 +189,41 @@ img {
 
 /* SKILLS SECTION */
 #skills-section {
-  background: var(--skills-background)
+  background: var(--skills-background);
+  flex-direction: column;
+  gap: 2rem;
+  height: 100vh;
+}
+.development {
+  flex-direction: column;
+  border: 1px solid var(--text-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.skills-info {
+  gap: 2rem;
+}
+.skills-rows {
+  gap: 2rem;
+}
+
+/* PROJECTS SECTIONS */
+#projects {
+  flex-direction: column;
+  background: var(--projects-background);
+  height: 100vh;
+}
+
+.projects-info {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.project-picture {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
 }

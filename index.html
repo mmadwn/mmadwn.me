@@ -1,215 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="mediaquery.css">
+  </head>
 
-<body>
-    
+  <body>
     <!--Header-->
     <header>
-        <div class="header header-desktop">
-            <a href="#" class="logo">Ridwan</a>
-            <nav id="navbar">
-                <ul class="nav-link">
-                    <li><a href="#welcome-section">About</a></li>
-                    <li><a href="#projects">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="container">
-
-        </div>
+      <div class="header header-desktop">
+        <a href="#" class="logo">Ridwan</a>
+        <nav id="navbar">
+          <ul class="nav-link">
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container"></div>
     </header>
 
     <!--Main-->
     <main>
+      <!--Welcome Section-->
+      <section id="welcome-section">
+        <div class="welcome-picture">
+          <img src="assets/welcome-picture.jpg" alt="head-picture" />
+        </div>
+        <div class="welcome-info">
+          <p>Hey I'm</p>
+          <h1 class="title">Muhammad Ridwan</h1>
+          <p>a web developer</p>
+          <div class="btn-container">
+            <button class="btn btn-color-1">Download CV</button>
+            <button  class="btn btn-color2">Contact Info</button>
+          </div>
+          <div class="social-container">
+            <a id="profile-link" target="_blank" href="https://github.com/mmadwn"><img class="icon" src="assets/github.png" alt="" /></a>
+            <img class="icon" src="assets/linkedin.png" alt="" />
+          </div>
+        </div>
+      </section>
 
-        <!--Welcome Section-->
-        <section id="welcome-section">
-            <div class="welcome-picture">
-                <img src="assets/welcome-picture.jpg" alt="head-picture">
+      <!--About Section-->
+      <section id="about-section">
+        <div class="head-section">
+          <p>Get To Know More</p>
+          <h1 class="title">About Me</h1>
+        </div>
+        <div class="about-info">
+          <div class="about-picture">
+            <img src="assets/welcome-picture.jpg" alt="" />
+          </div>
+          <div class="about-details">
+            <div class="box-info">
+              <div class="experience-container">
+                <img src="" alt="" />
+                <h2>Experience</h2>
+                <p>1+ years Frontend Development</p>
+              </div>
+              <div class="education-container">
+                <img src="" alt="" />
+                <h2>Education</h2>
+                <p>B.Eng. Bachelors Degree</p>
+              </div>
             </div>
-            <div class="welcome-info">
-                <p>Hey I'm </p>
-                <h1 class="title">Muhammad Ridwan</h1>
-                <p>a web developer</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-1">Download CV</button>
-                    <button class="btn btn-color2">Contact Info</button>
-                </div>
-                <div class="social-container">
-                    <img class="icon" src="assets/github.png" alt="">
-                    <img class="icon" src="assets/linkedin.png" alt="">
-                </div>
-            </div>
-        </section>
+            <p>Lorem ipsum, dolor sit</p>
+          </div>
+        </div>
+      </section>
 
-        <!--About Section-->
-        <section id="about-section">
-            <div class="head-section">
-            <p>Get To Know More</p>
-            <h1 class="title">About Me</h1>
+      <!--Skills Section-->
+      <section id="skills-section">
+        <div class="head-section">
+          <p>Explore My</p>
+          <h1 class="title">Skills</h1>
+        </div>
+        <div class="skills-info">
+          <div class="development">
+            <div>Frontend Development</div>
+            <div class="skills-rows">
+              <div class="skill-name">
+                <div></div>
+                <h3>HTML</h3>
+                <p></p>
+              </div>
+              <div class="skill-name">
+                <div></div>
+                <h3>CSS</h3>
+                <p></p>
+              </div>
+              <div class="skill-name">
+                <div></div>
+                <h3>Tailwind</h3>
+                <p></p>
+              </div>
             </div>
-            <div class="about">
-                <div class="about-picture">
-                    <img src="assets/welcome-picture.jpg" alt="">
-                </div>
-                <div class="about-info">
-                    <div class="box-info">
-                        <div class="experience-container">
-                            <img src="" alt="">
-                            <h2>Experience</h2>
-                            <p>1+ years Frontend Development</p>
-                        </div>
-                        <div class="education-container">
-                            <img src="" alt="">
-                            <h2>Education</h2>
-                            <p>B.Eng. Bachelors Degree</p>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum, dolor sit</p>
-                </div>
+            <div class="skills-rows">
+              <div class="skill-name">
+                <div></div>
+                <h3>Bootstrap</h3>
+                <p></p>
+              </div>
+              <div class="skill-name">
+                <div></div>
+                <h3>Javascript</h3>
+                <p></p>
+              </div>
+              <div class="skill-name">
+                <div></div>
+                <h3>Typescript</h3>
+                <p></p>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="development">
+            <div>Backend Development</div>
+            <div class="skills-rows">
+              <div class="skill-name">
+                <div></div>
+                <h3>Nodejs</h3>
+                <p></p>
+              </div>
+              <div class="skill-name">
+                <div></div>
+                <h3>Firebase</h3>
+                <p></p>
+              </div>
+              <div class="skill-name">
+                <div></div>
+                <h3>MySQL</h3>
+                <p></p>
+              </div>
+            </div>
+            <div class="skills-rows">
+              <div class="skill-name">
+                <div></div>
+                <h3>PostgreSQL</h3>
+                <p></p>
+              </div>
+              <div class="skill-name">
+                <div></div>
+                <h3>ExpressJS</h3>
+                <p></p>
+              </div>
+              <div class="skill-name">
+                <div></div>
+                <h3>AWS</h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!--Skills Section-->
-        <section id="skills-section">
-            <div class="head-section">
-                <p>Explore My</p>
-                <h1 class="title">Skills/h1>
+      <section id="projects">
+        <div class="head-section">
+          <p>Brows My Recent</p>
+          <h1 class="title">Projects</h1>
+        </div>
+        <div class="projects-info">
+          <div class="project-tile">
+            <div class="project-picture">
+              <img src="assets/welcome-picture.jpg" alt="" />
             </div>
-            <div class="skills">
-                <div class="development">
-                    <div>Frontend Development</div>
-                    <div>
-                        <div>
-                            <div></div>
-                            <h3>HTML</h3>
-                            <p>Experienced</p>
-                        </div>
-                        <div>
-                            <div></div>
-                            <h3>CSS</h3>
-                            <p></p>
-                        </div>
-                        <div>
-                            <div></div>
-                            <h3>Tailwind</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div></div>
-                            <h3>Bootstrap</h3>
-                            <p></p>
-                        </div>
-                        <div>
-                            <div></div>
-                            <h3>Javascript</h3>
-                            <p></p>
-                        </div>
-                        <div>
-                            <div></div>
-                            <h3>Typescript</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="development">
-                    <div>Frontend Development</div>
-                    <div>
-                        <div>
-                            <div></div>
-                            <h3>HTML</h3>
-                            <p>Experienced</p>
-                        </div>
-                        <div>
-                            <div></div>
-                            <h3>CSS</h3>
-                            <p></p>
-                        </div>
-                        <div>
-                            <div></div>
-                            <h3>Tailwind</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div></div>
-                            <h3>Bootstrap</h3>
-                            <p></p>
-                        </div>
-                        <div>
-                            <div></div>
-                            <h3>Javascript</h3>
-                            <p></p>
-                        </div>
-                        <div>
-                            <div></div>
-                            <h3>Typescript</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
+            <p>Facebook Friends - Cards</p>
+            <div>
+              <button class="btn btn-color-1">Github</button>
+              <button class="btn btn-color2">Live Demo</button>
             </div>
-        </section>
+          </div>
+          <div>
+            <div class="project-picture">
+              <img src="assets/welcome-picture.jpg" alt="" />
+            </div>
+            <p>Facebook Friends - Cards</p>
+            <div>
+              <button class="btn btn-color-1">Github</button>
+              <button class="btn btn-color2">Live Demo</button>
+            </div>
+          </div>
+          <div>
+            <div class="project-picture">
+              <img src="assets/welcome-picture.jpg" alt="" />
+            </div>
+            <p>Facebook Friends - Cards</p>
+            <div>
+              <button class="btn btn-color-1">Github</button>
+              <button class="btn btn-color2">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="projects">
+      <section id="contact-section">
+        <div class="head-section">
+          <p>Brows My Recent</p>
+          <h1 class="title">Projects</h1>
+        </div>
+        <div>
+          <div>
+            <img src="" alt="" />
             <p></p>
-            <h1>These are some of my projects</h1>
-            <div class="projects-grid">
-                <a href="">
-                    <img src="" alt="">
-                    <p>Facebook Friends - Cards</p>
-                </a>
-                <a href="">
-                    <img src="" alt="">
-                    <p>Documentation</p>
-                </a>
-                <a href="">
-                    <img src="" alt="">
-                    <p>Product Landing Page</p>
-                </a>
-                <a href="">
-                    <img src="" alt="">
-                    <p>Survey Form</p>
-                </a>
-                <a href="">
-                    <img src="" alt="">
-                    <p>Tribute Page</p>
-                </a>
-                <a href="">
-                    <img src="" alt="">
-                    <p>Secret</p>
-                </a>
-            </div>
-        </section id="contact">
-        <div>
-            <h2>Let's work together...</h2>
-            <p>How do you take</p>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <p></p>
+          </div>
+          <!-- <a href="https://facebook.com"><i class="fab fa-facebook"></i>Facebook</a> -->
         </div>
-        <div>
-            <a href="https://facebook.com"><i class="fab fa-facebook"></i>Facebook</a>
-            <a href="https://facebook.com"><i class="fab fa-facebook"></i>Facebook</a>
-            <a href="https://facebook.com"><i class="fab fa-facebook"></i>Facebook</a>
-            <a href="https://facebook.com"><i class="fab fa-facebook"></i>Facebook</a>
-            <a href="https://facebook.com"><i class="fab fa-facebook"></i>Facebook</a>
-        </div>
-        <section>
-
-        </section>
+      </section>
     </main>
 
-    <footer></footer>
-</body>
-
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Experience</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <p>Copyright © 2024 Muhammad Ridwan. All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>
