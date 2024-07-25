@@ -24,6 +24,11 @@
     rgb(44, 44, 44) 0%,
     rgb(20, 20, 20) 100%
   );
+  --contact-background: linear-gradient(
+    to Bottom,
+    rgb(20, 20, 20) 0%,
+    rgb(17, 17, 17) 100%
+  );
 }
 
 /* CSS Reset */
@@ -64,7 +69,19 @@ img {
   width: 8rem;
   border-radius: 2rem;
 }
-
+/* Under Construction */
+.notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffcc00;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 1000;
+}
 /*----------------------HEADER----------------- */
 .header,
 .nav-link {
@@ -101,18 +118,19 @@ img {
 #skills-section,
 #projects,
 #contact-section,
-.welcome-info,
 .about-info,
 .box-info,
 .about-info,
 .skills-info,
+.contact-info,
 .development,
 .skills-rows,
 .skill-name,
 .btn-container,
 .social-container,
 .experience-container,
-.education-container {
+.education-container,
+.contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,5 +243,28 @@ img {
 .project-picture {
   width: 20rem;
   height: 20rem;
+  overflow: hidden;
+}
+
+
+/*FOOTER */
+
+/* CONTACT-SECTION */
+#footer {
+  height: 100vh;
+  background: var(--contact-background)
+}
+
+#contact-section {
+  flex-direction: column;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.contact-image {
+  width: 2rem;
+  height: 2rem;
   overflow: hidden;
 }
