@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhammad Ridwan</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
 
   <body>
@@ -19,12 +15,13 @@
     <!--Header-->
     <header>
       <div class="header header-desktop">
-        <a href="#" class="logo">Ridwan</a>
+        <h1><a href="#" class="logo">Ridwan</a></h1>
         <nav id="navbar">
-          <ul class="nav-link">
-            <li><a href="#welcome-section">About</a></li>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="nav-links">
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#skills-section">Experience</a></li>
+            <li><a href="#projects-section">Work</a></li>
+            <li><a href="#contact-section">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -36,19 +33,30 @@
       <!--Welcome Section-->
       <section id="welcome-section">
         <div class="welcome-picture">
-          <img src="assets/welcome-picture.jpg" alt="head-picture" />
+          <img src="assets/photo1.png" alt="head-picture" />
         </div>
         <div class="welcome-info">
-          <p>Hey I'm</p>
-          <h1 class="title">Muhammad Ridwan</h1>
-          <p>a web developer</p>
+          <div class="text-container">
+            <p>Hey I'm</p>
+            <h2 class="title">Muhammad Ridwan</h2>
+            <p>a web developer</p>
+          </div>
           <div class="btn-container">
-            <button class="btn btn-color-1">Download CV</button>
-            <button  class="btn btn-color2">Contact Info</button>
+            <button type="button" class="btn btn-color-1" onclick="window.open('./assets/CV_Muhammad Ridwan.pdf')">Download CV</button>
+            <button type="button" class="btn btn-color-2" onclick="location.href='./#contact-section'">Contact Info</button>
           </div>
           <div class="social-container">
-            <a id="profile-link" target="_blank" href="https://github.com/mmadwn"><img class="icon" src="assets/github.png" alt="" /></a>
-            <img class="icon" src="assets/linkedin.png" alt="" />
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://github.com/mmadwn"
+              ><img class="icon" src="assets/github.png" alt="github icon"
+            /></a>
+            <a rel="noopener"
+              target="_blank"
+              href="https://linkedin.com/in/mmadwn">
+              <img class="icon" src="assets/linkedin.png" alt="linkedin icon" />
+            </a>
           </div>
         </div>
       </section>
@@ -57,7 +65,7 @@
       <section id="about-section">
         <div class="head-section">
           <p>Get To Know More</p>
-          <h1 class="title">About Me</h1>
+          <h2 class="title">About Me</h2>
         </div>
         <div class="about-info">
           <div class="about-picture">
@@ -66,17 +74,19 @@
           <div class="about-details">
             <div class="box-info">
               <div class="experience-container">
-                <img src="" alt="" />
-                <h2>Experience</h2>
-                <p>1+ years Frontend Development</p>
+                <img class="icon" src="assets/experience.png" alt="experience icon" />
+                <h3>Experience</h3>
+                <p>1+ year </p>
+                <p>Frontend Development</p>
               </div>
               <div class="education-container">
-                <img src="" alt="" />
-                <h2>Education</h2>
+                <img  class="icon" src="assets/education.png" alt="" />
+                <h3>Education</h3>
                 <p>B.Eng. Bachelors Degree</p>
+                <p>Computer Engineering</p>
               </div>
             </div>
-            <p>Lorem ipsum, dolor sit</p>
+            <p class="text-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis expedita repellat, officiis officia cupiditate voluptatum aliquam. Consequuntur dolor iusto provident. Sed suscipit vel distinctio fuga itaque neque? Ad, nulla voluptatibus!</p>
           </div>
         </div>
       </section>
@@ -85,7 +95,7 @@
       <section id="skills-section">
         <div class="head-section">
           <p>Explore My</p>
-          <h1 class="title">Skills</h1>
+          <h2 class="title">Skills</h2>
         </div>
         <div class="skills-info">
           <div class="development">
@@ -165,10 +175,10 @@
         </div>
       </section>
 
-      <section id="projects">
+      <section id="projects-section">
         <div class="head-section">
           <p>Brows My Recent</p>
-          <h1 class="title">Projects</h1>
+          <h2 class="title">Projects</h2>
         </div>
         <div class="projects-info">
           <div class="project-tile">
@@ -204,15 +214,10 @@
         </div>
       </section>
 
-    
-    </main>
-
-    <footer id="footer">
-
       <section id="contact-section">
         <div class="head-section">
-          <p>Brows My Recent</p>
-          <h1 class="title">Projects</h1>
+          <p>Get in Touch</p>
+          <h2 class="title">Contact Me</h2>
         </div>
 
         <div class="contact-info">
@@ -220,31 +225,46 @@
             <div class="contact-image">
               <img src="assets/email.png" alt="" />
             </div>
-            <a aria-label="Mail to muh.rdwan.u@gmail.com" href="mailto:muh.rdwan.u@gmail.com">muh.rdwan.u@gmail.com</a>
+            <a
+              aria-label="Mail to muh.rdwan.u@gmail.com"
+              href="mailto:muh.rdwan.u@gmail.com"
+              >muh.rdwan.u@gmail.com</a
+            >
           </div>
 
           <div class="contact-container">
             <div class="contact-image">
               <img src="assets/linkedin.png" alt="" />
             </div>
-            <a aria-label="Going to linkedin profile link" href="https://linkedin.com.mmadwn" rel="noopener" target="_blank">Linkedin</a>
+            <a
+              aria-label="Going to linkedin profile link"
+              href="https://linkedin.com.mmadwn"
+              rel="noopener"
+              target="_blank"
+              >Linkedin</a
+            >
           </div>
-        
         </div>
       </section>
+    </main>
 
+    <footer id="footer">
       <nav>
-        <ul class="nav-link" >
-          <li><a href="">About</a></li>
-          <li><a href="">Experience</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
+        <ul class="nav-links">
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#skills-section">Experience</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#contact-section">Contact</a></li>
         </ul>
       </nav>
-      <p class="Copyright">Copyright © 2024 Muhammad Ridwan. All Rights Reserved.</p>
+      <p>Copyright © 2024 Muhammad Ridwan. All Rights Reserved.</p>
     </footer>
-    <script>setTimeout(function() {
-      document.getElementById('maintenanceNotification').style.display = 'none';
-    }, 10000); </script>
+
+    <script>
+      setTimeout(function () {
+        document.getElementById("maintenanceNotification").style.display =
+          "none";
+      }, 100);
+    </script>
   </body>
 </html>
