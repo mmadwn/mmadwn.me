@@ -87,7 +87,8 @@
     #about-section,
     #skills-section,
     #projects-section,
-    #contact-section {
+    #contact-section,
+    #footer {
       padding: 0 2rem;
     }
     

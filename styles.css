@@ -158,7 +158,7 @@ h1 {
 
 #welcome-section {
   gap: 5rem;
-  height: 100vh;
+  min-height: 100vh;
   background: var(--welcome-background);
   /* margin: 0 10rem; */
 }
@@ -212,7 +212,7 @@ h1 {
 #about-section {
   flex-direction: column;
   background: var(--about-background);
-  height: 100vh;
+  min-height: 100vh;
   /* margin: 0 10rem; */
 }
 
@@ -266,7 +266,7 @@ h1 {
   background: var(--skills-background);
   flex-direction: column;
   gap: 2rem;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .skills-info {
@@ -295,7 +295,7 @@ h1 {
 #projects-section {
   flex-direction: column;
   background: var(--projects-background);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .projects-info {
@@ -321,8 +321,7 @@ h1 {
 /* CONTACT-SECTION */
 #contact-section {
   flex-direction: column;
-
-  height: 80vh;
+  min-height: 80vh;
   background: var(--contact-background);
 }
 
@@ -344,7 +343,7 @@ h1 {
 
 #footer {
   flex-direction: column;
-  height: 15vh;
+  min-height: 15vh;
   background: black;
 }
 
