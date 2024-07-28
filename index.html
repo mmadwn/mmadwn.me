@@ -1,270 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhammad Ridwan</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
 
-  <body>
-    <div class="notification" id="maintenanceNotification">
-      Website sedang dalam pengerjaan. Harap kembali lagi nanti.
-    </div>
-    <!--Header-->
-    <header>
-      <div class="header header-desktop">
-        <h1><a href="#" class="logo">Ridwan</a></h1>
-        <nav id="navbar">
-          <ul class="nav-links">
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#skills-section">Experience</a></li>
-            <li><a href="#projects-section">Work</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="container"></div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Ridwan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
 
-    <!--Main-->
-    <main>
-      <!--Welcome Section-->
-      <section id="welcome-section">
-        <div class="welcome-picture">
-          <img src="assets/photo1.png" alt="head-picture" />
+<body>
+  <div class="notification" id="maintenanceNotification">
+    Website sedang dalam pengerjaan. Harap kembali lagi nanti.
+  </div>
+  <!--Header-->
+  <header>
+    <div class="header header-desktop">
+      <h1><a href="#" class="logo">Ridwan</a></h1>
+      <nav class="navbar">
+        <div class="burger-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-        <div class="welcome-info">
-          <div class="text-container">
-            <p>Hey I'm</p>
-            <h2 class="title">Muhammad Ridwan</h2>
-            <p>a web developer</p>
-          </div>
-          <div class="btn-container">
-            <button type="button" class="btn btn-color-1" onclick="window.open('./assets/CV_Muhammad Ridwan.pdf')">Download CV</button>
-            <button type="button" class="btn btn-color-2" onclick="location.href='./#contact-section'">Contact Info</button>
-          </div>
-          <div class="social-container">
-            <a
-              rel="noopener"
-              target="_blank"
-              href="https://github.com/mmadwn"
-              ><img class="icon" src="assets/github.png" alt="github icon"
-            /></a>
-            <a rel="noopener"
-              target="_blank"
-              href="https://linkedin.com/in/mmadwn">
-              <img class="icon" src="assets/linkedin.png" alt="linkedin icon" />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!--About Section-->
-      <section id="about-section">
-        <div class="head-section">
-          <p>Get To Know More</p>
-          <h2 class="title">About Me</h2>
-        </div>
-        <div class="about-info">
-          <div class="about-picture">
-            <img src="assets/welcome-picture.jpg" alt="" />
-          </div>
-          <div class="about-details">
-            <div class="box-info">
-              <div class="experience-container">
-                <img class="icon" src="assets/experience.png" alt="experience icon" />
-                <h3>Experience</h3>
-                <p>1+ year </p>
-                <p>Frontend Development</p>
-              </div>
-              <div class="education-container">
-                <img  class="icon" src="assets/education.png" alt="" />
-                <h3>Education</h3>
-                <p>B.Eng. Bachelors Degree</p>
-                <p>Computer Engineering</p>
-              </div>
-            </div>
-            <p class="text-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis expedita repellat, officiis officia cupiditate voluptatum aliquam. Consequuntur dolor iusto provident. Sed suscipit vel distinctio fuga itaque neque? Ad, nulla voluptatibus!</p>
-          </div>
-        </div>
-      </section>
-
-      <!--Skills Section-->
-      <section id="skills-section">
-        <div class="head-section">
-          <p>Explore My</p>
-          <h2 class="title">Skills</h2>
-        </div>
-        <div class="skills-info">
-          <div class="development">
-            <div>Frontend Development</div>
-            <div class="skills-rows">
-              <div class="skill-name">
-                <div></div>
-                <h3>HTML</h3>
-                <p></p>
-              </div>
-              <div class="skill-name">
-                <div></div>
-                <h3>CSS</h3>
-                <p></p>
-              </div>
-              <div class="skill-name">
-                <div></div>
-                <h3>Tailwind</h3>
-                <p></p>
-              </div>
-            </div>
-            <div class="skills-rows">
-              <div class="skill-name">
-                <div></div>
-                <h3>Bootstrap</h3>
-                <p></p>
-              </div>
-              <div class="skill-name">
-                <div></div>
-                <h3>Javascript</h3>
-                <p></p>
-              </div>
-              <div class="skill-name">
-                <div></div>
-                <h3>Typescript</h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <div class="development">
-            <div>Backend Development</div>
-            <div class="skills-rows">
-              <div class="skill-name">
-                <div></div>
-                <h3>Nodejs</h3>
-                <p></p>
-              </div>
-              <div class="skill-name">
-                <div></div>
-                <h3>Firebase</h3>
-                <p></p>
-              </div>
-              <div class="skill-name">
-                <div></div>
-                <h3>MySQL</h3>
-                <p></p>
-              </div>
-            </div>
-            <div class="skills-rows">
-              <div class="skill-name">
-                <div></div>
-                <h3>PostgreSQL</h3>
-                <p></p>
-              </div>
-              <div class="skill-name">
-                <div></div>
-                <h3>ExpressJS</h3>
-                <p></p>
-              </div>
-              <div class="skill-name">
-                <div></div>
-                <h3>AWS</h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects-section">
-        <div class="head-section">
-          <p>Brows My Recent</p>
-          <h2 class="title">Projects</h2>
-        </div>
-        <div class="projects-info">
-          <div class="project-tile">
-            <div class="project-picture">
-              <img src="assets/welcome-picture.jpg" alt="" />
-            </div>
-            <p>Facebook Friends - Cards</p>
-            <div>
-              <button class="btn btn-color-1">Github</button>
-              <button class="btn btn-color2">Live Demo</button>
-            </div>
-          </div>
-          <div>
-            <div class="project-picture">
-              <img src="assets/welcome-picture.jpg" alt="" />
-            </div>
-            <p>Facebook Friends - Cards</p>
-            <div>
-              <button class="btn btn-color-1">Github</button>
-              <button class="btn btn-color2">Live Demo</button>
-            </div>
-          </div>
-          <div>
-            <div class="project-picture">
-              <img src="assets/welcome-picture.jpg" alt="" />
-            </div>
-            <p>Facebook Friends - Cards</p>
-            <div>
-              <button class="btn btn-color-1">Github</button>
-              <button class="btn btn-color2">Live Demo</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact-section">
-        <div class="head-section">
-          <p>Get in Touch</p>
-          <h2 class="title">Contact Me</h2>
-        </div>
-
-        <div class="contact-info">
-          <div class="contact-container">
-            <div class="contact-image">
-              <img src="assets/email.png" alt="" />
-            </div>
-            <a
-              aria-label="Mail to muh.rdwan.u@gmail.com"
-              href="mailto:muh.rdwan.u@gmail.com"
-              >muh.rdwan.u@gmail.com</a
-            >
-          </div>
-
-          <div class="contact-container">
-            <div class="contact-image">
-              <img src="assets/linkedin.png" alt="" />
-            </div>
-            <a
-              aria-label="Going to linkedin profile link"
-              href="https://linkedin.com.mmadwn"
-              rel="noopener"
-              target="_blank"
-              >Linkedin</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer id="footer">
-      <nav>
         <ul class="nav-links">
           <li><a href="#about-section">About</a></li>
           <li><a href="#skills-section">Experience</a></li>
-          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#projects-section">Work</a></li>
           <li><a href="#contact-section">Contact</a></li>
         </ul>
       </nav>
-      <p>Copyright © 2024 Muhammad Ridwan. All Rights Reserved.</p>
-    </footer>
+    </div>
+  </header>
 
-    <script>
-      setTimeout(function () {
-        document.getElementById("maintenanceNotification").style.display =
-          "none";
-      }, 100);
-    </script>
-  </body>
+  <!--Main-->
+  <main>
+    <!--Welcome Section-->
+    <section id="welcome-section">
+      <div class="welcome-picture">
+        <img src="assets/photo1.png" alt="head-picture" />
+      </div>
+      <div class="welcome-info">
+        <div class="text-container">
+          <p>Hey I'm</p>
+          <h2 class="title">Muhammad Ridwan</h2>
+          <p>a web developer</p>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="btn btn-color-1" onclick="window.open('./assets/CV_Muhammad Ridwan.pdf')">
+            Download CV
+          </button>
+          <button type="button" class="btn btn-color-2" onclick="location.href='./#contact-section'">
+            Contact Info
+          </button>
+        </div>
+        <div class="social-container">
+          <a rel="noopener" target="_blank" href="https://github.com/mmadwn"><img class="icon" src="assets/github.png"
+              alt="github icon" /></a>
+          <a rel="noopener" target="_blank" href="https://linkedin.com/in/mmadwn">
+            <img class="icon" src="assets/linkedin.png" alt="linkedin icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about-section">
+      <div class="head-section">
+        <p>Get To Know More</p>
+        <h2 class="title">About Me</h2>
+      </div>
+      <div class="about-info">
+        <div class="about-picture">
+          <img src="assets/photo1.png" alt="" />
+        </div>
+        <div class="about-details">
+          <div class="box-info">
+            <div class="experience-container">
+              <img class="icon" src="assets/experience.png" alt="experience icon" />
+              <h3>Experience</h3>
+              <p>1+ year</p>
+              <p>Frontend Development</p>
+            </div>
+            <div class="education-container">
+              <img class="icon" src="assets/education.png" alt="" />
+              <h3>Education</h3>
+              <p>B.Eng. Bachelors Degree</p>
+              <p>Computer Engineering</p>
+            </div>
+          </div>
+          <p class="text-paragraph">
+            Hello! I’m a fresh Computer Engineering graduate passionate about web and mobile development. With experience in JavaScript, React, and Node.js, I’ve worked on projects like a bouquet ordering app and a school profile website. I’m eager to join a dynamic team to grow and make a meaningful impact in the tech industry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Skills Section-->
+    <section id="skills-section">
+      <div class="head-section">
+        <p>Explore My</p>
+        <h2 class="title">Skills</h2>
+      </div>
+      <div class="skills-info">
+        <div class="development">
+          <div>Frontend Development</div>
+          <div class="skills-rows">
+            <div class="skill-container">
+              <img class="icon" src="assets/checkmark.png" alt="checkmark" />
+              <div>
+                <h3>HTML</h3>
+                <p>Advanced</p>
+              </div>
+            </div>
+            <div class="skill-container">
+              <img class="icon" src="assets/checkmark.png" alt="checkmark" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </div>
+            <div class="skill-container">
+              <img class="icon" src="assets/checkmark.png" alt="checkmark" />
+              <div>
+                <h3>Tailwind</h3>
+                <p>Basic</p>
+              </div>
+            </div>
+          </div>
+          <div class="skills-rows">
+            <div class="skill-container">
+              <img class="icon" src="assets/checkmark.png" alt="checkmark" />
+              <div>
+                <h3>Javascript</h3>
+                <p>Intermediate</p>
+              </div>
+            </div>
+            <div class="skill-container">
+              <img class="icon" src="assets/checkmark.png" alt="checkmark" />
+              <div>
+                <h3>React</h3>
+                <p>Basic</p>
+              </div>
+            </div>
+            <div class="skill-container">
+              <img class="icon" src="assets/checkmark.png" alt="checkmark" />
+              <div>
+                <h3>jQuery</h3>
+                <p>Basic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="development">
+          <div>Other</div>
+          <div class="skills-rows">
+            <div class="skill-container">
+              <img class="icon" src="assets/checkmark.png" alt="checkmark" />
+              <div>
+                <h3>Nodejs</h3>
+                <p>Basic</p>
+              </div>
+            </div>
+            <div class="skill-container">
+              <img class="icon" src="assets/checkmark.png" alt="checkmark" />
+              <div>
+                <h3>ExpressJs</h3>
+                <p>Basic</p>
+              </div>
+            </div>
+            <div class="skill-container">
+              <img class="icon" src="assets/checkmark.png" alt="checkmark" />
+              <div>
+                <h3>MySQL</h3>
+                <p>Basic</p>
+              </div>
+            </div>
+          </div>
+          <div class="skills-rows">
+            <div class="skill-container">
+              <img class="icon" src="assets/checkmark.png" alt="checkmark" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Basic</p>
+              </div>
+            </div>
+            <div class="skill-container">
+              <img class="icon" src="assets/checkmark.png" alt="checkmark" />
+              <div>
+                <h3>GitHub</h3>
+                <p>Intermediate</p>
+              </div>
+            </div>
+            <div class="skill-container">
+              <img class="icon" src="assets/checkmark.png" alt="checkmark" />
+              <div>
+                <h3>AWS</h3>
+                <p>Basic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="projects-section">
+      <div class="head-section">
+        <p>Browse My Recent</p>
+        <h2 class="title">Projects</h2>
+      </div>
+      <div class="projects-info">
+        <div class="project-tile">
+          <div class="project-picture">
+            <img src="assets/project1.png" alt="" />
+          </div>
+          <p>BouquetSOC</p>
+          <div>
+            <button class="btn btn-color-1">Github</button>
+            <button class="btn btn-color2">Live Demo</button>
+          </div>
+        </div>
+        <div class="project-tile">
+          <div class="project-picture">
+            <img src="assets/welcome-picture.jpg" alt="" />
+          </div>
+          <p>Darul Falah Edu</p>
+          <div>
+            <button class="btn btn-color-1">Github</button>
+            <button class="btn btn-color2">Live Demo</button>
+          </div>
+        </div>
+        <div class="project-tile">
+          <div class="project-picture">
+            <img src="assets/welcome-picture.jpg" alt="" />
+          </div>
+          <p>Facebook Friends - Cards</p>
+          <div>
+            <button class="btn btn-color-1">Github</button>
+            <button class="btn btn-color2">Live Demo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section">
+      <div class="head-section">
+        <p>Get in Touch</p>
+        <h2 class="title">Contact Me</h2>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-container">
+          <div class="contact-image">
+            <img src="assets/email.png" alt="" />
+          </div>
+          <a aria-label="Mail to muh.rdwan.u@gmail.com" href="mailto:muh.rdwan.u@gmail.com">muh.rdwan.u@gmail.com</a>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-image">
+            <img src="assets/linkedin.png" alt="" />
+          </div>
+          <a aria-label="Going to linkedin profile link" href="https://linkedin.com.mmadwn" rel="noopener"
+            target="_blank">Linkedin</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#skills-section">Experience</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+    <p>Copyright © 2024 Muhammad Ridwan. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

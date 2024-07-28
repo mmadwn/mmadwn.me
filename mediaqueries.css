@@ -1,0 +1,110 @@
+/* Burger menu icon */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .title {
+      font-size: 1.8rem;
+    }
+    
+    #welcome-section,
+    #about-section,
+    #skills-section,
+    #projects-section,
+    #contact-section {
+      padding: 0 5rem;
+    }
+    
+    .projects-info {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header-desktop {
+      justify-content: space-between;
+      padding: 0 2rem;
+    }
+    
+    .burger-menu {
+      display: block;
+      z-index: 1000;
+    }
+    
+    .nav-links {
+      position: fixed;
+      right: -100%;
+      top: 6vh;
+      height: 94vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      transition: right 0.5s ease;
+    }
+    
+    .nav-links.active {
+      right: 0;
+    }
+    
+    #welcome-section {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .welcome-picture,
+    .about-picture {
+      width: 15rem;
+      height: 15rem;
+    }
+    
+    .about-info {
+      flex-direction: column;
+    }
+    
+    .skills-info {
+      flex-direction: column;
+    }
+    
+    .projects-info {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #welcome-section,
+    #about-section,
+    #skills-section,
+    #projects-section,
+    #contact-section {
+      padding: 0 2rem;
+    }
+    
+    .title {
+      font-size: 1.5rem;
+    }
+    
+    .btn {
+      width: 7rem;
+      padding: 0.8rem;
+    }
+    
+    .box-info {
+      flex-direction: column;
+    }
+    
+    .contact-info {
+      flex-direction: column;
+    }
+  }
