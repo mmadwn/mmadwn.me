@@ -1,6 +1,6 @@
 const burgerMenu = document.querySelector(".burger-menu");
 const navLinks = document.querySelector(".nav-links");
-const year = docment.querySelector(".year");
+const year = document.querySelector(".year");
                                       
 burgerMenu.addEventListener("click", () => {
   navLinks.classList.toggle("active");
