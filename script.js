@@ -1,6 +1,7 @@
 const burgerMenu = document.querySelector(".burger-menu");
 const navLinks = document.querySelector(".nav-links");
-
+const year = docment.querySelector(".year");
+                                      
 burgerMenu.addEventListener("click", () => {
   navLinks.classList.toggle("active");
   burgerMenu.classList.toggle("toggle");
@@ -18,3 +19,7 @@ document.querySelectorAll(".nav-links li").forEach((link) => {
 setTimeout(function () {
   document.getElementById("maintenanceNotification").style.display = "none";
 }, 100);
+
+//Set dynamic year
+const date = new Date().getFullYear()
+year.textContent = date
